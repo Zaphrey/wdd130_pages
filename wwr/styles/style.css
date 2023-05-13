@@ -99,6 +99,7 @@ footer p a:hover {
 }
 
 footer a {
+    text-decoration: none;
     color: #F0F7F4;
 }
 
