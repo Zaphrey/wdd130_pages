@@ -4,12 +4,12 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
+/*https://coolors.co/3c493f-7e8d85-b3bfb8-f0f7f4-774c60*/
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #223843   ;
-  --secondary-color: #eff1f3 ;
-  --accent1-color: #dbd3d8;
+  --primary-color: #3C493F   ;
+  --secondary-color: #F0F7F4 ;
+  --accent1-color: #B3BFB8;
   --accent2-color: #62929e;
 
   /* change the values below to your chosen font(s) */
