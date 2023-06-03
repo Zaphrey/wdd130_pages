@@ -8,11 +8,11 @@ Fonts are separated by a | */
   /* change the values below to your colors from your palette */
   --primary-color: #3f4545   ;
   --secondary-color: #748442 ;
-  --accent1-color: #283618;
+  --accent1-color: #3b4f24;
   --accent2-color: #FEFAE0;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: Fira Sans, Helvetica;
+  --heading-font: Fira Sans, Helvetica, sans-serif;
   --paragraph-font: sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -24,7 +24,7 @@ Fonts are separated by a | */
   --nav-link-color: #FEFAE0;
   --nav-background-color: #748442;
   --nav-hover-link-color: #FEFAE0;
-  --nav-hover-background-color: #4e5633;
+  --nav-hover-background-color: #3b4f24;
 }
 
 
