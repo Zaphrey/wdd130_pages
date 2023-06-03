@@ -59,16 +59,15 @@ h4 {
 }
 
 #hero-msg h1 {
-    color: rgb(154, 196, 206);
-    font-size: 3em;
+    color: #bcc4c0;
+    font-size: 4em;
     font-family: Caveat, "Brush Script MT", "IM Fell French Canon";
     text-align: center;
 }
 
 #hero-msg h4 {
-    margin-top: -25px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1.25em;
     color: white;
 }
@@ -86,7 +85,6 @@ h4 {
 
 .button-box {
     text-align: center;
-    margin-top: 75px;
 }
 
 main section {
