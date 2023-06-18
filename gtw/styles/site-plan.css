@@ -35,6 +35,10 @@ Fonts are separated by a | */
   height: auto;
 }
 
+.wireframe-img {
+  width: 250px;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
