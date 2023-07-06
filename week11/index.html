@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Practice</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1 class="title">Pictures I've taken at Amerson River Park</h1>
+    <!-- Container for the image gallery -->
+<div class="container">
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 7</div>
+        <img src="images/great-overlook.png" style="object-position: center -450px" alt="great overlook">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 7</div>
+        <img src="images/bird-house.png"  style="object-position: center -700px" alt="bird house">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 7</div>
+        <img src="images/field.png" alt="field">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 7</div>
+        <img src="images/deer.png" style="object-position: center -500px" alt="deer">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 7</div>
+        <img src="images/overgrown-fence.png" style="object-position: center -100px" alt="overgrown fence">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+        <img src="images/stone-benches.png" alt="stone benches">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo-cursor" src="images/great-overlook.png" onclick="currentSlide(1)" alt="Great Overlook">
+      </div>
+      <div class="column">
+        <img class="demo-cursor" src="images/bird-house.png" onclick="currentSlide(2)" alt="Bird House">
+      </div>
+      <div class="column">
+        <img class="demo-cursor" src="images/field.png" onclick="currentSlide(3)" alt="Field">
+      </div>
+      <div class="column">
+        <img class="demo-cursor" src="images/deer.png" onclick="currentSlide(4)" alt="Deer">
+      </div>
+      <div class="column">
+        <img class="demo-cursor" src="images/overgrown-fence.png" onclick="currentSlide(5)" alt="Overgrown Fence">
+      </div>
+      <div class="column">
+        <img class="demo-cursor" src="images/stone-benches.png" onclick="currentSlide(6)" alt="Stone Benches">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo-cursor");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
+</body>
+</html>
