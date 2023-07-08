@@ -22,7 +22,7 @@
         <!-- Source: James Mordon | Link: https://unsplash.com/photos/kEUMr4TZ_8Y -->
         <!-- REMEMBER: scale down image -->
         <img src="images/currahee_mountain.jpg" alt="an image of the currahee mountain">
-        <h1>
+        <h1 id="wildlife-header">
             The state of Georgia has tons of stunning wildlife from reptilians like the Green Anoles and American Toads, 
             to the Appalachian Cottontail and White-tailed deer. 
             When hiking it is important to know what to do when when coming across dangerous animals like Rattlesnakes and Alligators, 
@@ -31,21 +31,26 @@
             and it’s important to respect each animal as such.
         </h1>
     </section>
-    <section class="alligator-info">
-        <h1>American alligator</h1>
-        <!-- Source: https://georgiawildlife.com/sites/default/files/wrd/pdf/fact-sheets/2016_alligator.pdf -->
-        <p>
-            Alligators are fascinating creatures and important to the ecosystem of Georgia. 
-            They help maintain the population for certain animals and they help shape and modify habitats. 
-            Gators can be found in the wet environments of Georgia like marshes, swamps, slow moving rivers, and lakes. 
-            When in an area or hiking on a trail with the possibility of alligators, be on the watch, use common sense, give them the respect they deserve and leave them be.
-        </p>
-        <!-- Source: Hunter Trahan | Link: https://unsplash.com/photos/L9b5zfjlp-M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText -->
-        <!-- REMEMBER: scale down image -->
-        <img src="images/american_alligator.jpg" alt="a picture of an american alligator">
-    </section>
+    <div class="alligator-container">
+        <section class="alligator-info">
+            <h1>American alligator</h1>
+            <!-- Source: https://georgiawildlife.com/sites/default/files/wrd/pdf/fact-sheets/2016_alligator.pdf -->
+            <p>
+                Alligators are fascinating creatures and important to the ecosystem of Georgia. 
+                They help maintain the population for certain animals and they help shape and modify habitats. 
+                Gators can be found in the wet environments of Georgia like marshes, swamps, slow moving rivers, and lakes. 
+                When in an area or hiking on a trail with the possibility of alligators, be on the watch, use common sense, give them the respect they deserve and leave them be.
+            </p>
+            <!-- Source: Hunter Trahan | Link: https://unsplash.com/photos/L9b5zfjlp-M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText -->
+            <!-- REMEMBER: scale down image -->
+            <img src="images/american_alligator.jpg" alt="a picture of an american alligator">
+            <a class="source-link" href="https://georgiawildlife.com/sites/default/files/wrd/pdf/fact-sheets/2016_alligator.pdf">
+                Source: Georgia Department of Natural Resources
+            </a>
+        </section>
+    </div>
     <section class="snake-info">
-        <!-- Source: https://srelherp.uga.edu/snakes/snake-safety.htm -->
+        <!-- Source: https://srelherp.uga.edu/snakes/snake-safety.html -->
         <!-- Source: https://georgiawildlife.com/georgiasnakes#:~:text=Snakes%20of%20Georgia&text=Snakes%20are%20economically%20beneficial%20because,in%20terrestrial%20or%20aquatic%20ecosystems. -->
         <h1>Snakes</h1>
         <p>
@@ -127,6 +132,11 @@
                 </p>
             </div>
         </div>
+        <div class="snake-source-container">
+            <a class="source-link" href="https://srelherp.uga.edu/snakes/snake-safety.htm">
+                Source: Savannah River Ecology Laboratory
+            </a>
+        </div>
     </section>
     <div class="lower-site-nav">
         <div class="trails-card">
@@ -150,9 +160,44 @@
     <footer>
         <p>Georgia Trails & Wildlife by Zachary Humphreys &copy; 2023</p>
         <a href="site-plan-trails.html">Georgia Trails & Wildlife site plan</a>
-        <div class="sources">
-            <p></p>
-        </div>
+        <ul class="sources">
+            <li><p>Sources:</p></li>
+            <!-- Source: Jean Beaufort | Link: https://www.publicdomainpictures.net/en/view-image.php?image=150029&picture=eastern-diamondback-rattlesnake -->
+            <li><a href="https://www.publicdomainpictures.net/en/view-image.php?image=150029&picture=eastern-diamondback-rattlesnake">
+                Eastern Diamondback Rattlesnake image: Jean Beaufort on publicdomainpictures.net
+            </a></li>
+            <!-- Source: National Parks Gallery | Link: https://picryl.com/media/timber-rattlesnake-crotalus-horridus-e44720 -->
+            <li><a href="https://picryl.com/media/timber-rattlesnake-crotalus-horridus-e44720">
+                Timber Rattlesnake image: National Parks Gallery on picryl.com
+            </a></li>
+            <!-- Source: Justin Smith | Link: https://pixabay.com/photos/snake-pigmy-rattlesnake-rattlesnake-5371289/ -->
+            <li><a href="https://pixabay.com/photos/snake-pigmy-rattlesnake-rattlesnake-5371289/">
+                Pigmy Rattlesnake image: Justin Smith posted on pixabay.com
+            </a></li>
+            <!-- Source: Sheila Brown | Link: https://www.publicdomainpictures.net/en/view-image.php?image=305037&picture=copperhead-snake -->
+            <li><a href="https://www.publicdomainpictures.net/en/view-image.php?image=305037&picture=copperhead-snake">
+                Copperhead Snake image: Sheila Brown posted on publicdomainpictures.com
+            </a></li>
+
+            <!-- Source: Meg Jarrard | Link: https://unsplash.com/photos/0qE0qZ7_3eY -->
+            <li><a href="https://unsplash.com/photos/0qE0qZ7_3eY">
+                Copperhead Snake image: Meg Jarrard posted on unsplash.com
+            </a></li>
+            <!-- Source: National Parks Gallery | Link: https://picryl.com/media/texas-coral-snake-45aad4 -->
+            <li><a href="https://picryl.com/media/texas-coral-snake-45aad4">
+                Coral Snake image: National Parks Gallery on picryl.com
+            </a></li>
+            <li><a href="https://unsplash.com/photos/L9b5zfjlp-M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                American alligator image: Hunter Trahan posted on unsplash.com
+            </a></li>
+            <!-- Source: Aaron J Hill | Link: https://www.pexels.com/photo/a-white-tailed-deer-in-a-forest-13081880/ -->
+            <li><a href="https://www.pexels.com/photo/a-white-tailed-deer-in-a-forest-13081880/">
+                Deer image: Aaron J Hill posted on pexels.com
+            </a></li>
+            <li><a href="https://unsplash.com/photos/z9F_yK4Nmf8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                Supplies image: Alice Donovan Rouse posted on unsplash.com
+            </a></li>
+        </ul>
     </footer>
 </body>
 </html>
